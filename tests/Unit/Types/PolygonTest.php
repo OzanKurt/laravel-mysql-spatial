@@ -1,11 +1,11 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit\Types;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit\Types;
 
-use Grimzy\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
-use Grimzy\LaravelMysqlSpatial\Types\LineString;
-use Grimzy\LaravelMysqlSpatial\Types\Point;
-use Grimzy\LaravelMysqlSpatial\Types\Polygon;
+use Kurt\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
+use Kurt\LaravelMysqlSpatial\Types\LineString;
+use Kurt\LaravelMysqlSpatial\Types\Point;
+use Kurt\LaravelMysqlSpatial\Types\Polygon;
 
 class PolygonTest extends BaseTestCase
 {
@@ -60,7 +60,7 @@ class PolygonTest extends BaseTestCase
     public function testInvalidGeoJsonException()
     {
         $this->assertException(
-            \Grimzy\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
+            \Kurt\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
             'Expected GeoJson\Geometry\Polygon, got GeoJson\Geometry\Point'
         );
         Polygon::fromJson('{"type":"Point","coordinates":[3.4,1.2]}');

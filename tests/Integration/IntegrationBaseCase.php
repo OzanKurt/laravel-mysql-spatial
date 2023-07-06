@@ -1,10 +1,10 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Integration;
+namespace Kurt\LaravelMysqlSpatial\Tests\Integration;
 
-use Grimzy\LaravelMysqlSpatial\SpatialServiceProvider;
-use Grimzy\LaravelMysqlSpatial\Tests\Integration\Migrations\CreateTables;
-use Grimzy\LaravelMysqlSpatial\Tests\Integration\Migrations\UpdateTables;
+use Kurt\LaravelMysqlSpatial\SpatialServiceProvider;
+use Kurt\LaravelMysqlSpatial\Tests\Integration\Migrations\CreateTables;
+use Kurt\LaravelMysqlSpatial\Tests\Integration\Migrations\UpdateTables;
 use Illuminate\Support\Facades\DB;
 use Laravel\BrowserKitTesting\TestCase as BaseTestCase;
 

@@ -1,7 +1,7 @@
 {
-    "name": "grimzy/laravel-mysql-spatial",
+    "name": "ozankurt/laravel-mysql-spatial",
     "description": "MySQL spatial data types extension for Laravel.",
-    "homepage": "https://github.com/grimzy/laravel-mysql-spatial",
+    "homepage": "https://github.com/OzanKurt/laravel-mysql-spatial",
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "analyse": "vendor/bin/phpstan analyse",
@@ -13,8 +13,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Joseph Estefane",
-            "email": "estefanejoe@gmail.com"
+            "name": "Ozan Kurt",
+            "email": "me@ozankurt.com"
         }
     ],
     "require": {
@@ -43,12 +43,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Grimzy\\LaravelMysqlSpatial\\": "src"
+            "Kurt\\LaravelMysqlSpatial\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Grimzy\\LaravelMysqlSpatial\\Tests\\": "tests"
+            "Kurt\\LaravelMysqlSpatial\\Tests\\": "tests"
         }
     },
     "config": {
@@ -61,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Grimzy\\LaravelMysqlSpatial\\SpatialServiceProvider"
+                "Kurt\\LaravelMysqlSpatial\\SpatialServiceProvider"
             ]
         }
     },

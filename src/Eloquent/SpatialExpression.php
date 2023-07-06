@@ -1,9 +1,9 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Eloquent;
+namespace Kurt\LaravelMysqlSpatial\Eloquent;
 
-use Grimzy\LaravelMysqlSpatial\Types\Geometry;
-use Grimzy\LaravelMysqlSpatial\Types\GeometryInterface;
+use Kurt\LaravelMysqlSpatial\Types\Geometry;
+use Kurt\LaravelMysqlSpatial\Types\GeometryInterface;
 use Illuminate\Database\Grammar;
 use Illuminate\Database\Query\Expression;
 

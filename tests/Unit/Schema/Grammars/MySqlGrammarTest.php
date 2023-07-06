@@ -1,11 +1,11 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit\Schema\Grammars;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit\Schema\Grammars;
 
-use Grimzy\LaravelMysqlSpatial\MysqlConnection;
-use Grimzy\LaravelMysqlSpatial\Schema\Blueprint;
-use Grimzy\LaravelMysqlSpatial\Schema\Grammars\MySqlGrammar;
-use Grimzy\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
+use Kurt\LaravelMysqlSpatial\MysqlConnection;
+use Kurt\LaravelMysqlSpatial\Schema\Blueprint;
+use Kurt\LaravelMysqlSpatial\Schema\Grammars\MySqlGrammar;
+use Kurt\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
 use Mockery;
 
 class MySqlGrammarTest extends BaseTestCase

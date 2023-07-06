@@ -1,12 +1,12 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Eloquent;
+namespace Kurt\LaravelMysqlSpatial\Eloquent;
 
-use Grimzy\LaravelMysqlSpatial\Exceptions\SpatialFieldsNotDefinedException;
-use Grimzy\LaravelMysqlSpatial\Exceptions\UnknownSpatialFunctionException;
-use Grimzy\LaravelMysqlSpatial\Exceptions\UnknownSpatialRelationFunction;
-use Grimzy\LaravelMysqlSpatial\Types\Geometry;
-use Grimzy\LaravelMysqlSpatial\Types\GeometryInterface;
+use Kurt\LaravelMysqlSpatial\Exceptions\SpatialFieldsNotDefinedException;
+use Kurt\LaravelMysqlSpatial\Exceptions\UnknownSpatialFunctionException;
+use Kurt\LaravelMysqlSpatial\Exceptions\UnknownSpatialRelationFunction;
+use Kurt\LaravelMysqlSpatial\Types\Geometry;
+use Kurt\LaravelMysqlSpatial\Types\GeometryInterface;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 
 /**
@@ -62,7 +62,7 @@ trait SpatialTrait
      * Create a new Eloquent query builder for the model.
      *
      * @param  \Illuminate\Database\Query\Builder  $query
-     * @return \Grimzy\LaravelMysqlSpatial\Eloquent\Builder
+     * @return \Kurt\LaravelMysqlSpatial\Eloquent\Builder
      */
     public function newEloquentBuilder($query)
     {

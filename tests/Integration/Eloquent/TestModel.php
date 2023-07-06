@@ -1,12 +1,12 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Integration\Eloquent;
+namespace Kurt\LaravelMysqlSpatial\Tests\Integration\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 
 class TestModel extends Model
 {
-    use \Grimzy\LaravelMysqlSpatial\Eloquent\SpatialTrait;
+    use \Kurt\LaravelMysqlSpatial\Eloquent\SpatialTrait;
 
     protected $spatialFields = ['point'];   // TODO: only required when fetching, not saving
 

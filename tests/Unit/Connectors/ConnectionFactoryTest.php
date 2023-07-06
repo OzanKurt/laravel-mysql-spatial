@@ -1,10 +1,10 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit\Connectors;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit\Connectors;
 
-use Grimzy\LaravelMysqlSpatial\Connectors\ConnectionFactory;
-use Grimzy\LaravelMysqlSpatial\MysqlConnection;
-use Grimzy\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
+use Kurt\LaravelMysqlSpatial\Connectors\ConnectionFactory;
+use Kurt\LaravelMysqlSpatial\MysqlConnection;
+use Kurt\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
 use Illuminate\Container\Container;
 use Mockery;
 

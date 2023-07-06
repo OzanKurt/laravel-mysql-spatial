@@ -1,9 +1,9 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit\Types;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit\Types;
 
-use Grimzy\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
-use Grimzy\LaravelMysqlSpatial\Types\Point;
+use Kurt\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
+use Kurt\LaravelMysqlSpatial\Types\Point;
 
 class PointTest extends BaseTestCase
 {
@@ -73,7 +73,7 @@ class PointTest extends BaseTestCase
     public function testInvalidGeoJsonException()
     {
         $this->assertException(
-            \Grimzy\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
+            \Kurt\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
             'Expected GeoJson\Geometry\Point, got GeoJson\Geometry\LineString'
         );
         Point::fromJson('{"type": "LineString","coordinates":[[1,1],[2,2]]}');

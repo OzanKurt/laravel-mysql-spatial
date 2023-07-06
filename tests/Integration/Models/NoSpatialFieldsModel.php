@@ -1,14 +1,14 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Integration\Models;
+namespace Kurt\LaravelMysqlSpatial\Tests\Integration\Models;
 
-use Grimzy\LaravelMysqlSpatial\Eloquent\SpatialTrait;
+use Kurt\LaravelMysqlSpatial\Eloquent\SpatialTrait;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class NoSpatialFieldsModel.
  *
- * @property \Grimzy\LaravelMysqlSpatial\Types\Geometry geometry
+ * @property \Kurt\LaravelMysqlSpatial\Types\Geometry geometry
  */
 class NoSpatialFieldsModel extends Model
 {

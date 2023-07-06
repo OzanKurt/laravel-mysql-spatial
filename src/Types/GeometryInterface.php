@@ -1,6 +1,6 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Types;
+namespace Kurt\LaravelMysqlSpatial\Types;
 
 use GeoJson\GeoJson;
 

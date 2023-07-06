@@ -1,9 +1,9 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit;
 
-use Grimzy\LaravelMysqlSpatial\MysqlConnection;
-use Grimzy\LaravelMysqlSpatial\Schema\Builder;
+use Kurt\LaravelMysqlSpatial\MysqlConnection;
+use Kurt\LaravelMysqlSpatial\Schema\Builder;
 use PHPUnit\Framework\TestCase;
 
 class MysqlConnectionTest extends TestCase

@@ -1,17 +1,17 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Integration\Models;
+namespace Kurt\LaravelMysqlSpatial\Tests\Integration\Models;
 
-use Grimzy\LaravelMysqlSpatial\Eloquent\SpatialTrait;
+use Kurt\LaravelMysqlSpatial\Eloquent\SpatialTrait;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class GeometryModel.
  *
  * @property int                                          id
- * @property \Grimzy\LaravelMysqlSpatial\Types\Point      location
- * @property \Grimzy\LaravelMysqlSpatial\Types\LineString line
- * @property \Grimzy\LaravelMysqlSpatial\Types\LineString shape
+ * @property \Kurt\LaravelMysqlSpatial\Types\Point      location
+ * @property \Kurt\LaravelMysqlSpatial\Types\LineString line
+ * @property \Kurt\LaravelMysqlSpatial\Types\LineString shape
  */
 class GeometryModel extends Model
 {

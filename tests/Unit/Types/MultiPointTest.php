@@ -1,10 +1,10 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Tests\Unit\Types;
+namespace Kurt\LaravelMysqlSpatial\Tests\Unit\Types;
 
-use Grimzy\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
-use Grimzy\LaravelMysqlSpatial\Types\MultiPoint;
-use Grimzy\LaravelMysqlSpatial\Types\Point;
+use Kurt\LaravelMysqlSpatial\Tests\Unit\BaseTestCase;
+use Kurt\LaravelMysqlSpatial\Types\MultiPoint;
+use Kurt\LaravelMysqlSpatial\Types\Point;
 use InvalidArgumentException;
 
 class MultiPointTest extends BaseTestCase
@@ -47,7 +47,7 @@ class MultiPointTest extends BaseTestCase
     public function testInvalidGeoJsonException()
     {
         $this->assertException(
-            \Grimzy\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
+            \Kurt\LaravelMysqlSpatial\Exceptions\InvalidGeoJsonException::class,
             sprintf('Expected %s, got %s', \GeoJson\Geometry\MultiPoint::class, \GeoJson\Geometry\Point::class)
         );
         MultiPoint::fromJson('{"type":"Point","coordinates":[3.4,1.2]}');
@@ -67,7 +67,7 @@ class MultiPointTest extends BaseTestCase
     {
         $this->assertException(
             InvalidArgumentException::class,
-            'Grimzy\LaravelMysqlSpatial\Types\MultiPoint must contain at least 1 entry'
+            'Kurt\LaravelMysqlSpatial\Types\MultiPoint must contain at least 1 entry'
         );
         $multipoint = new MultiPoint([]);
     }
@@ -76,7 +76,7 @@ class MultiPointTest extends BaseTestCase
     {
         $this->assertException(
             InvalidArgumentException::class,
-            'Grimzy\LaravelMysqlSpatial\Types\MultiPoint must be a collection of Grimzy\LaravelMysqlSpatial\Types\Point'
+            'Kurt\LaravelMysqlSpatial\Types\MultiPoint must be a collection of Kurt\LaravelMysqlSpatial\Types\Point'
         );
         $multipoint = new MultiPoint([
             new Point(0, 0),
@@ -102,7 +102,7 @@ class MultiPointTest extends BaseTestCase
         // assert invalid
         $this->assertException(
             InvalidArgumentException::class,
-            'Grimzy\LaravelMysqlSpatial\Types\MultiPoint must be a collection of Grimzy\LaravelMysqlSpatial\Types\Point'
+            'Kurt\LaravelMysqlSpatial\Types\MultiPoint must be a collection of Kurt\LaravelMysqlSpatial\Types\Point'
         );
         $multipoint[] = 1;
     }
